@@ -25,7 +25,7 @@ $ possible-words <options>
 
 Options
   --word, -w  Word to find
-  --exlude, -w  Letters to exlude (optional)
+  --exlude, -e  Letters to exlude (optional)
   --has, -h  Letters to include (optional)
 
 Examples
