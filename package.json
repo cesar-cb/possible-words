@@ -1,0 +1,11 @@
+{
+  "name": "possible-words",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "meow": "^10.1.2"
+  }
+}
