@@ -25,7 +25,7 @@ $ possible-words <options>
 
 Options
   --word, -w  Word to find
-  --exlude, -e  Letters to exlude (optional)
+  --exclude, -e  Letters to exclude (optional)
   --has, -h  Letters to include (optional)
 
 Examples
@@ -34,11 +34,11 @@ Examples
     carga
     ...
 
-  $ possible-words --word="c?rta" --exclude="gzym"
+  $ possible-words --word="car?a" --exclude="gzym"
     carta
     ...
 
-  $ possible-words --word="c?rta" --has="g"
+  $ possible-words --word="car?a" --has="g"
     carga
     ...
 ```
