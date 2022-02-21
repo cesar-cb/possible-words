@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import meow from 'meow';
 import chalk from 'chalk';
-import findWord from './findWords.js';
+import findWord from './findWords';
 
 const cli = meow(
   `

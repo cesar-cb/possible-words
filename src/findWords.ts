@@ -1,6 +1,6 @@
-import words from './words.js';
+import words from './words';
 
-export default (word, exclude, has) => {
+export default (word: string, exclude: Array<string>, has: Array<string>) => {
   const possibleWords = [];
 
   for (let i = 0; i < words.length; i++) {
@@ -17,7 +17,7 @@ export default (word, exclude, has) => {
       }
 
       if (
-        (currentWord[j] === currentLetter || currentLetter === '-') &&
+        (currentWord[j] === currentLetter || currentLetter === '?') &&
         !exclude.includes(currentWord[j])
       ) {
         if (j === 4) {
