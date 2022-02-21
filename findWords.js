@@ -29,7 +29,5 @@ export default (word, exclude, has) => {
     }
   }
 
-  console.log({ possibleWords });
-
   return possibleWords;
 };
