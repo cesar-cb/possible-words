@@ -1,11 +1,7 @@
 #!/usr/bin/env node
 import meow from 'meow';
 import chalk from 'chalk';
-<<<<<<< HEAD:src/index.ts
 import findWord from './findWords';
-=======
-import findWord from '../findWords.js';
->>>>>>> main:bin/index.js
 
 const cli = meow(
   `

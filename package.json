@@ -1,13 +1,25 @@
 {
   "name": "possible-words",
-  "version": "1.0.0",
-  "author": "Cesar Boaventura",
+  "version": "1.1.2",
+  "description": "This tool returns possible words based on your input, for games like: termo, wordle and letreco",
+  "author": {
+    "name": "Cesar Boaventura",
+    "email": "cesar.boaventura61@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesar-cb/possible-words.git"
+  },
+  "keywords": [
+    "termo",
+    "termooo",
+    "wordle",
+    "letreco"
+  ],
   "license": "MIT",
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsc"
+  "bin": {
+    "possible-words": "bin/index.js"
   },
   "dependencies": {
     "chalk": "^5.0.0",
