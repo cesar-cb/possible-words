@@ -1,7 +1,9 @@
 {
   "name": "possible-words",
   "version": "1.0.2",
-  "main": "index.js",
+  "bin": {
+    "possible-words": "bin/index.js"
+  },
   "license": "MIT",
   "type": "module",
   "dependencies": {
