@@ -17,7 +17,7 @@ export default (word, exclude, has) => {
       }
 
       if (
-        (currentWord[j] === currentLetter || currentLetter === '-') &&
+        (currentWord[j] === currentLetter || currentLetter === '?') &&
         !exclude.includes(currentWord[j])
       ) {
         if (j === 4) {
@@ -28,6 +28,8 @@ export default (word, exclude, has) => {
       }
     }
   }
+
+  console.log({ possibleWords });
 
   return possibleWords;
 };
