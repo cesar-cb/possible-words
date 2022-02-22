@@ -24,7 +24,7 @@ Examples
   $ find-words --word="c-rta" --has="g"
     carga
     ...
-`
+`,
   )
   .options({
     word: {
@@ -47,7 +47,7 @@ Examples
   })
   .parseSync();
 
-const word = argv.word;
+const { word } = argv;
 const exclude = (argv.exclude ?? '').split('');
 const has = (argv.has ?? '').split('');
 const language = argv.language as 'pt-br' | 'en';
@@ -61,7 +61,7 @@ const init = () => {
 
   const words = findWord({ word, exclude, has, language });
 
-  for (const word of words) console.log(chalk.green(word));
+  for (const w of words) console.info(chalk.green(w));
 };
 
 init();

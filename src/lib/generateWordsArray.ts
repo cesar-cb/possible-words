@@ -18,7 +18,7 @@ async function processLineByLine(file: string, arrayName: string) {
         line
           .toLowerCase()
           .normalize('NFD')
-          .replace(/[\u0300-\u036f]/g, '')
+          .replace(/[\u0300-\u036f]/g, ''),
       );
   }
 
@@ -29,13 +29,13 @@ async function processLineByLine(file: string, arrayName: string) {
     `export const ${arrayName} = ${JSON.stringify(uniqueWords)};\n`,
     function (err) {
       if (err) {
-        console.log('err append', err);
+        console.error('err append', err);
       }
-    }
+    },
   );
 }
 
-(async () => {
+void (async () => {
   const dictionaryPath = (fileName: string) =>
     path.join(__dirname, '../../', 'dictionary', fileName);
 
