@@ -1,18 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "module": "ES2022",
+    "target": "ES2021",
+    "module": "CommonJS",
     "moduleResolution": "node",
-    "rootDir": "./src",
-    "baseUrl": "./src",
+    "rootDir": "./",
+    "baseUrl": "./",
     "outDir": "dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipDefaultLibCheck": true,
-    "skipLibCheck": true,
-    "declaration": true
+    "skipLibCheck": true
   },
-  "include": ["./src/index.ts", "./src/words.ts", "./src/findWords.ts"],
+  "include": ["./bin/index.ts", "./src/words.ts", "./src/findWords.ts"],
   "exclude": ["node_modules", "dist"]
 }
