@@ -1,3 +1,5 @@
+[![npm](https://img.shields.io/npm/v/possible-words)](https://www.npmjs.com/package/possible-words)
+
 # Possible Words
 
 This tool returns possible words based on your input, for games like:
