@@ -3,19 +3,19 @@
 This tool returns possible words based on your input, for games like:
 
 - [termo](https://term.ooo)
-- [wordle](https://www.nytimes.com/games/wordle/index.html) (WIP)
+- [wordle](https://www.nytimes.com/games/wordle/index.html)
 - [letreco](https://www.gabtoschi.com/letreco/)
 
 ## Install
 
 ```
-$ yarn global add possible-words
+$ npm install -g possible-words
 ```
 
 or
 
 ```
-$ npm install -g possible-words
+$ yarn global add possible-words
 ```
 
 ## Usage
@@ -23,12 +23,18 @@ $ npm install -g possible-words
 ```
 $ possible-words <options>
 
-Options
-  --word, -w  Word to find
-  --exclude, -e  Letters to exclude (optional)
-  --has, -h  Letters to include (optional)
+Options:
+      --help      Show help                                            [boolean]
+      --version   Show version number                                  [boolean]
+  -w, --word                                                            [string]
+  -e, --exclude                                                         [string]
+  -h, --has                                                             [string]
+  -l, --language                     [choices: "pt-br", "en"] [default: "pt-br"]
 
 Examples
+  $ possible-words --word="paus?" --language="en"
+    pause
+
   $ possible-words --word=c?rta
     carta
     carga
