@@ -22,7 +22,7 @@
   },
   "scripts": {
     "dev": "ts-node bin/index.ts",
-    "build": "tsc"
+    "build": "tsc && chmod +x dist/bin/index.js"
   },
   "dependencies": {
     "chalk": "^4.1.2",
