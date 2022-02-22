@@ -1,6 +1,6 @@
 {
   "name": "possible-words",
-  "version": "1.2.1",
+  "version": "1.1.2",
   "description": "This tool returns possible words based on your input, for games like: termo, wordle and letreco",
   "author": {
     "name": "Cesar Boaventura",
@@ -18,7 +18,7 @@
   ],
   "license": "MIT",
   "bin": {
-    "possible-words": "bin/index.js"
+    "possible-words": "dist/bin/index.js"
   },
   "scripts": {
     "dev": "ts-node bin/index.ts",
