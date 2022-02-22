@@ -3,7 +3,7 @@
 This tool returns possible words based on your input, for games like:
 
 - [termo](https://term.ooo)
-- [wordle](https://www.nytimes.com/games/wordle/index.html)
+- [wordle](https://www.nytimes.com/games/wordle/index.html) (WIP)
 - [letreco](https://www.gabtoschi.com/letreco/)
 
 ## Install
