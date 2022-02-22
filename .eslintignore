@@ -2,3 +2,4 @@ node_modules
 dist
 dictionary
 src/words.ts
+jest.*
