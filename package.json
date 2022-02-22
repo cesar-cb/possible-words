@@ -23,15 +23,37 @@
   "scripts": {
     "dev": "ts-node bin/index.ts",
     "build": "tsc && chmod +x dist/bin/index.js",
-    "generate-words": "ts-node src/lib/generateWordsArray.ts"
+    "generate-words": "ts-node src/lib/generateWordsArray.ts",
+    "prettier:check": "prettier --check '**/*.{ts,json,yml,yaml}'",
+    "prettier:fix": "prettier --write '**/*.{ts,json,yml,yaml}'",
+    "lint": "eslint --ext .ts \"./\" --quiet --cache --color",
+    "lint:fix": "yarn lint --fix"
+  },
+  "lint-staged": {
+    "*.+(ts|tsx)": [
+      "yarn prettier:fix",
+      "yarn lint:fix"
+    ]
   },
   "dependencies": {
     "chalk": "^4.1.2",
+    "lint-staged": "^12.3.4",
     "yargs": "^17.3.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.19",
     "@types/yargs": "^17.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-typescript": "^16.1.0",
+    "eslint-config-airbnb-typescript-prettier": "^5.0.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "prettier": "^2.5.1",
     "ts-node": "^10.5.0",
     "typescript": "^4.5.5"
   }

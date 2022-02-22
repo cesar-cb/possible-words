@@ -12,6 +12,6 @@
     "skipDefaultLibCheck": true,
     "skipLibCheck": true
   },
-  "include": ["./bin/index.ts", "./src/words.ts", "./src/findWords.ts"],
+  "include": ["./bin/index.ts", "./src/**/*"],
   "exclude": ["node_modules", "dist"]
 }
