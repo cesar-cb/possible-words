@@ -30,7 +30,7 @@
     "lint:fix": "yarn lint --fix"
   },
   "lint-staged": {
-    "*.+(ts|tsx)": [
+    "*.+(ts)": [
       "yarn prettier:fix",
       "yarn lint:fix"
     ]
