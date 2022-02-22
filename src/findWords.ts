@@ -1,7 +1,15 @@
-import words from './words';
+import { ptBrWords, enWords } from './words';
 
-export default (word: string, exclude: Array<string>, has: Array<string>) => {
+type TParams = {
+  word: string;
+  exclude: Array<string>;
+  has: Array<string>;
+  language: 'pt-br' | 'en';
+};
+
+export default ({ word, exclude, has, language }: TParams) => {
   const possibleWords = [];
+  const words = language === 'en' ? enWords : ptBrWords;
 
   for (let i = 0; i < words.length; i++) {
     const currentWord = words[i];
